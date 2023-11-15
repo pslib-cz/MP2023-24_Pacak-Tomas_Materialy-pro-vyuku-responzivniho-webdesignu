@@ -1,0 +1,193 @@
+:root {
+    --text: #343434;
+    --title: #C3642E;
+    --primarC: #4C2121;
+    --btn: #FFBB56;
+    --wh: rgb(255, 255, 255);
+}
+.uvod {
+    background-image: url(/img/bg_s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    padding-top: 1rem;
+    position: relative;
+}
+.uvod div {position: relative; transform: translate(-50%, 0%); left: 25%;}
+
+
+
+
+
+
+.card {background-color: var(--wh); box-shadow: -4px 4px 8px 0px rgba(0, 0, 0, 0.40);}
+.card__text {padding-bottom: 0.5rem; padding: 0 0.5rem 0.5rem 0.5rem;}
+
+
+
+.button {
+    display: inline-block;
+    background-color: var(--btn);
+    color: var(--wh);
+    font-weight: 600;
+    padding: 0.5em 1.5em;
+    border: solid var(--btn) 3px;
+}
+.button--2 {
+    background-color: var(--wh);
+    color: var(--btn);
+}
+
+img {width: 100%; display: block;}
+
+/*hamburger*/
+.navbar {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-row {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.hamburger {
+    display: block;
+}
+.hamburger-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.menuDown__item {
+    display: block;
+    margin: 0;
+}
+.menuDown__item--button {
+    padding-left: 0;
+}
+.navbar__logo {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    z-index: 5;
+    margin-left: 1rem;
+}
+.hamburger {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+}
+.hamburger span {
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: var(--wh);
+    left: 0;
+    transition: 1s;
+}
+.hamburger span:nth-child(1) { top: 0px; }
+  
+.hamburger span:nth-child(2) { top: 18px; transition: 0.2s; }
+  
+.hamburger span:nth-child(3) { bottom: 0px; }
+
+.hamburger-nav {
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+
+.navbar__logo img {width: 180px;}
+
+@media screen and (max-width: 768px) { 
+    .hamburger-row {
+        position: relative;
+        z-index: 2;
+        background-color: var(--text);
+    }
+    .menuDown__item a {
+        display: block;
+        padding: 1em 1.5em;
+        color: var(--btnBg);   
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .hamburger-nav.active {
+        transform: scaleY(1);
+    }
+    .hamburger-nav.active > .navbar__logo {
+        position: absolute;
+        top: -3em;
+    }
+    .hamburger-nav {
+        transition: 0.5s;
+        position: absolute;
+        right: 0;
+        background-color: var(--text);
+        width: 13em;
+        z-index: 1;
+    }
+    .hamburger.active  span:nth-child(1) {
+        transition: 0.5s;
+        rotate: 45deg;
+        top: 18px;
+    }
+    .hamburger.active  span:nth-child(2) {
+        
+        position: absolute;
+        transform: translate(100%, 0);
+        right: 100%;
+        transition: 0.5s;
+    }
+    .hamburger.active  span:nth-child(3) {
+        transition: 1s;
+        rotate: 135deg;
+        bottom: 18px;
+        translate: .6s;
+    }
+}
+@media screen and (min-width: 769px) {
+    .hamburger-row {
+        display: none;
+    }
+    .hamburger-nav {
+        transform: none;
+        padding: 2em;
+        background-color: var(--footer);
+    }
+    .hamburger-nav > ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1em;
+    }
+    .menuDown__item a {
+        display: block;
+        color: var(--text);
+        transition: .2s;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 17px;
+    }
+    .menuDown__item {
+       padding: 0.5em;
+       height: fit-content;
+    }
+    .menuDown__item a:hover {
+        transform: scale(1.05);
+        transition: .2s;
+        color: var(--btn);
+    }
+    
+    .pageWrapper {
+        margin: 0;
+        padding: 0 2em;
+        max-width: 1024px;
+        min-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+}
