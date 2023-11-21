@@ -7,7 +7,7 @@
     --textAlt:#e5e5e5;
 }
 .uvod {
-    background-image: url(/img/bg_s.webp);
+    background-image: url(../img/bg_s.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vw;
@@ -19,6 +19,7 @@
 /*socky*/
 .socky {
     display: flex;
+    align-items: flex-end;
     gap: 1rem;
     position: absolute;
     bottom: 0;
@@ -26,7 +27,7 @@
 }
 .socka {
     padding: 0.5rem;
-    padding-bottom: 0;
+    padding-bottom: 0.25rem;
     border-radius: 10px 10px 0px 0px;
     background-color: var(--primarC);
     transition: 0.5s;
@@ -34,7 +35,7 @@
 .socka__icon {width: 1.5rem;}
 .socka:hover {
     padding-bottom: 1.5rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* icon cards */
