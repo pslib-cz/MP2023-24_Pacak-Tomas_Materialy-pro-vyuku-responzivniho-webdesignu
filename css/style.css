@@ -293,8 +293,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     
     .pageWrapper {
         margin: 0;
-        padding: 0 2em;
-        max-width: 1024px;
+        max-width: 1500px;
         min-width: 700px;
         margin-right: auto;
         margin-left: auto;

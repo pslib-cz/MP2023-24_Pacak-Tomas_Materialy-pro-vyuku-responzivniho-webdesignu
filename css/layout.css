@@ -20,6 +20,8 @@ section{margin: 8rem 1rem 0 1rem;}
     min-width: 300px;
 }
 
+.card__container {container-type: inline-size;}
+
 @media (min-width: 700px) {
 
     h1 {font-size: 5rem;}
@@ -31,9 +33,7 @@ section{margin: 8rem 1rem 0 1rem;}
         justify-content: center;
     }
 
-    .cards {
-        grid-template-columns: 1fr 1fr;
-    }
+    .cards { grid-template-columns: 1fr;}
 
     .gallery {
         display: grid;
@@ -49,6 +49,7 @@ section{margin: 8rem 1rem 0 1rem;}
 
 @media (min-width: 1200px) {
 
+    .cards {grid-template-columns: 1fr 1fr;}
     .story {
         display: flex;
         align-items: center;
@@ -74,4 +75,10 @@ section{margin: 8rem 1rem 0 1rem;}
     .gItem--3 {grid-column: unset; grid-row: unset;}
     .gItem--6 {grid-column: unset; grid-row: unset;}
     
+}
+
+@container (min-width: 650px) {
+    .card {display: flex; gap: 1.5rem; align-items: center;}
+    .card__img {max-width: 380px; flex-grow: 1;}
+    .card__text {flex-grow: 2;}
 }
