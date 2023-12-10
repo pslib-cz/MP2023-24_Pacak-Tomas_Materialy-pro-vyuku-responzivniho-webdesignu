@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-16x16.png">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="./css/hamburger.js"></script>
 </head>
@@ -41,41 +42,41 @@
     </header>
     <main>
         <div class="uvod">
-            <div>
-                <h1>Pizza<span class="title--modify">King Cutter</span></h1>
-                <p class="motto">Tradiční kvalita, moderní elegance</p>
-                <a class="button button--center" href="#">Kouopit</a>
-            </div>
+            <h1>Pizza<span class="title--modify">King Cutter</span></h1>
+            <p class="motto">Tradiční kvalita, moderní elegance</p>
+            <a class="button button--center" href="#">Kouopit</a>
+        </div>
+        
+        <div class="mainWrapper">
             <div class="socky">
                 <a class="socka" href="#"><img class="socka__icon" src="./img/icon_instagram.svg" alt="Instagram"></a>
                 <a class="socka" href="#"><img class="socka__icon" src="./img/icon_facebook.svg" alt="Facebook"></a>
                 <a class="socka" href="#"><img class="socka__icon" src="./img/icon_linkedin.svg" alt="LinkedIn"></a>
             </div>
-        </div>
-        
-        <div class="icons">
-            <div class="iconCard">
-                <img class="iconCard__icon" src="./img/icon_dimension.svg" alt="ikona pro rozměry">
-                <div class="iconCard__line"></div>
-                <div class="iconCard__text">
-                    <p class="iconCard__title">Rozměry</p>
-                    <p class="iconCard__desc">220x25x30cm</p>
+            <div class="icons">
+                <div class="iconCard">
+                    <img class="iconCard__icon" src="./img/icon_dimension.svg" alt="ikona pro rozměry">
+                    <div class="iconCard__line"></div>
+                    <div class="iconCard__text">
+                        <p class="iconCard__title">Rozměry</p>
+                        <p class="iconCard__desc">220x25x30cm</p>
+                    </div>
                 </div>
-            </div>
-            <div class="iconCard">
-                <img class="iconCard__icon" src="./img/icon_price.svg" alt="ikona pro cenu">
-                <div class="iconCard__line"></div>
-                <div class="iconCard__text">
-                    <p class="iconCard__title">Cena</p>
-                    <p class="iconCard__desc">2 500 Kč</p>
+                <div class="iconCard">
+                    <img class="iconCard__icon" src="./img/icon_price.svg" alt="ikona pro cenu">
+                    <div class="iconCard__line"></div>
+                    <div class="iconCard__text">
+                        <p class="iconCard__title">Cena</p>
+                        <p class="iconCard__desc">2 500 Kč</p>
+                    </div>
                 </div>
-            </div>
-            <div class="iconCard">
-                <img class="iconCard__icon" src="./img/icon_weight.svg" alt="ikona pro hmotnost">
-                <div class="iconCard__line"></div>
-                <div class="iconCard__text">
-                    <p class="iconCard__title">Rozměry</p>
-                    <p class="iconCard__desc">220x25x30cm</p>
+                <div class="iconCard">
+                    <img class="iconCard__icon" src="./img/icon_weight.svg" alt="ikona pro hmotnost">
+                    <div class="iconCard__line"></div>
+                    <div class="iconCard__text">
+                        <p class="iconCard__title">Rozměry</p>
+                        <p class="iconCard__desc">220x25x30cm</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,7 +108,9 @@
 
         <section id="pribeh">
             <div class="story">
-                <img class="story__img" src="./img/originalni_krajec_na_pizzu.webp" alt="originální kráječ na pizzu" srcset="">
+                <div class="story__wrapper">
+                    <img class="story__img" src="./img/originalni_krajec_na_pizzuS.webp" alt="originální kráječ na pizzu" srcset="./img/originalni_krajec_na_pizzuS.webp 600w, ./img/originalni_krajec_na_pizzu.webp 1000w">
+                </div>
                 <div class="story__text">
                     <h2><span class="title--modify">Náš příběh</span></h2>
                     <p class="story__desc">Odkud vznikl nápad na tenhle kráječ? Věříme, že kvalitní nástroje jsou srdcem každé kuchyně. Měli jsme plné zuby klasických kráječů, které postrádají něžný dotek designu. A tak vznikl PizzaKing Cutter – kráječ na pizzu, který spojuje klasický design loveckého nože s nezbytností snadného nakrájení i nejtlustší pizzy. Vstupte do světa PizzaKing, kde nejde jen o kráječ, ale o výraz lásky k poctivé pizze a řemeslu.</p>
@@ -168,6 +171,32 @@
             <a class="button" href="#">Koupit</a>
             <a class="button button--2" href="mailto:PizzaKing@gmail.com">Napište nám</a>
         </div>
+    </section>
+    <section>
+        <h2>Kontaktní formulář</h2>
+        <form action="/submit_form">
+            <div class="kontakt__wrapper">
+                <div class="kontakt__input">
+                <input type="text" id="name" name="name" placeholder="Petr Čech" required>
+                <label class="input__nadpis" for="name">Jméno a přijmení</label>
+                </div>
+            
+                <div class="kontakt__input">
+                <input type="text" id="phone" name="phone" placeholder="+420 123 456 789" required>
+                <label class="input__nadpis" for="phone">Telefonní číslo</label>
+                </div>
+            
+                <div class="kontakt__input">
+                <input type="text" id="email" name="email" placeholder="petrC@gmail.com" required>
+                <label class="input__nadpis" for="email">Email</label>
+                </div>
+            </div>
+          <div class="kontakt__input">
+            <input class="kontakt__input--zprava" type="text" id="zprava" name="zprava" placeholder="Neváhejte napsat" required>
+            <label class="input__nadpis input__nadpis--zprava" for="expirydate">Zpráva</label>
+          </div>
+          
+        </form>
     </section>
     <footer>
         <div class="footerWrapper">
