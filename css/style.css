@@ -6,6 +6,7 @@
     --wh: rgb(255, 255, 255);
     --textAlt:#e5e5e5;
 }
+html {scroll-behavior: smooth;}
 .uvod {
     background-image: url(../img/bg_s.webp);
     background-repeat: no-repeat;
@@ -137,9 +138,9 @@ img {width: 100%; display: block;}
     position: relative;
     margin-bottom: 25px;
     min-width: 20rem;
-  }
+}
 
-  input[type=text], select {
+.kontakt__text {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -147,22 +148,10 @@ img {width: 100%; display: block;}
     border: 1px solid var(--text);
     border-radius: 4px;
     box-sizing: border-box;
-  }
-
-  input[type=submit] {
-    width: 100%;
-    background-color: #00c507;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .input__nadpis {
+}
+.input__nadpis {
     position: absolute;
-    top: -15%;
+    top: -0.25rem;
     pointer-events: none;
     left: 20px;
     padding: 0.25em;
@@ -170,17 +159,26 @@ img {width: 100%; display: block;}
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
     background-color: white;
-  }
-
-  input[type=text]:focus ~ label, input[type=text]:valid ~ label {
+}
+.kontakt__text:focus ~ label {
     top: -20px;
     font-size: 14px;
     color: var(--btn);
-  }
-  input[type=text]:focus {
-    border: #00c507;
-  }
-
+}
+.kontakt__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.kontakt__info::after {
+    content: 'Odesláním souhlasíte se spracováním dat.';
+    position: absolute;
+    bottom: -2rem;
+    font-size: 14px;
+}
+.iconCard--kontakt {color: var(--btn);}
 
 /*footer*/
 footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
@@ -208,7 +206,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 }
 
 
-/*hamburger*/
+/*hamburger menu*/
 .navbar {
     position: relative;
     justify-content: space-between;
