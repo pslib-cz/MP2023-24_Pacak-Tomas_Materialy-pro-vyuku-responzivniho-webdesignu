@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaKing Cutter</title>
+    <meta name="description" content="PizzaKing Cutter je víc než jen kráječ na pizzu, je to zážitek. Originální designu, ergonomická rukojeť ze dřeva, ruční práce a kvalitní materiály. Vyberte si svůj styl s možností vlastního výběru druhu dřeva a vygravírovaného textu.">
+    <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +15,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-16x16.png">
+    <link rel="preload" href="./img/bg_s.webp" as="image">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="./css/hamburger.js"></script>
 </head>
@@ -109,7 +112,7 @@
         <section id="pribeh">
             <div class="story">
                 <div class="story__wrapper">
-                    <img class="story__img" src="./img/originalni_krajec_na_pizzuS.webp" alt="originální kráječ na pizzu" srcset="./img/originalni_krajec_na_pizzuS.webp 600w, ./img/originalni_krajec_na_pizzu.webp 1000w">
+                    <img class="story__img" sizes="(max-widht: 630px) 70vw, (min-widht: 630) 50vw" src="./img/originalni_krajec_na_pizzuS.webp" alt="originální kráječ na pizzu" srcset="./img/originalni_krajec_na_pizzuS.webp 600w, ./img/originalni_krajec_na_pizzu.webp 1000w">
                 </div>
                 <div class="story__text">
                     <h2><span class="title--modify">Náš příběh</span></h2>
@@ -149,22 +152,22 @@
         <h2><span class="title--modify">Galerie</span></h2>
         <div class="gallery">
             <div class="gItem">
-                <a class="gItem__link" href=""><img class="gItem__img" src="./img/g1.webp" alt=""></a>
+                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g1.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
             </div>
             <div class="gItem gItem gItem--2">
-                <a class="gItem__link" href=""><img class="gItem__img" src="./img/g2.webp" srcset="./img/g2.webp 500w, ./img/g2_b.webp 1100w" alt=""></a>
+                <a class="gItem__link" href="#"><img class="gItem__img" sizes="(max-widht: 630px) 50vw, (min-widht: 630) 75vw" src="./img/g2.webp" srcset="./img/g2.webp 500w, ./img/g2_b.webp 1100w" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
             </div>
-            <div class="gItem gItem--3">
-                <a class="gItem__link" href=""><img class="gItem__img" src="./img/g3.webp" srcset="./img/g3.webp 500w, ./img/g3_b.webp 1100w" alt=""></a>
-            </div>
-            <div class="gItem">
-                <a class="gItem__link" href=""><img class="gItem__img" src="./img/g4.webp" alt=""></a>
+            <div class="gItem gItem--3">        
+                <a class="gItem__link" href="#"><img class="gItem__img" sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g3.webp" srcset="./img/g3.webp 500w, ./img/g3_b.webp 1100w" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
             </div>
             <div class="gItem">
-                <a class="gItem__link" href=""><img class="gItem__img" src="./img/g5.webp" alt=""></a>
+                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g4.webp" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+            </div>
+            <div class="gItem">
+                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g5.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
             </div>
             <div class="gItem gItem--6">
-                <a class="gItem__link" href=""><img class="gItem__img" src="./img/g6.webp" srcset="./img/g6.webp 500w, ./img/g6_b.webp 1100w" alt=""></a>
+                <a class="gItem__link" href="#"><img class="gItem__img" sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g6.webp" srcset="./img/g6.webp 500w, ./img/g6_b.webp 1100w" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
             </div>
         </div>
         <div class="gallery__buttons">
@@ -193,8 +196,8 @@
                     </div>
                 </div>
               <div class="kontakt__input">
-                <textarea class="kontakt__text" class="kontakt__input--zprava" name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
-                <label class="input__nadpis input__nadpis--zprava" for="expirydate">Zpráva</label>
+                <textarea class="kontakt__text kontakt__input--zprava" name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
+                <label class="input__nadpis input__nadpis--zprava" for="zprava">Zpráva</label>
               </div>
             </form>
             <div class="kontakt__info">

@@ -3,4 +3,4 @@ Stáhněte si podkladový kód a vytvořte funkční responzivní menu využíva
 (v rámci cvičení nezáleží na přesném paddingu prvků, stačí ho zvolit tak aby vizuálně odpovídal řešení)
 
 ![řešení pro mobilní zařízení](./reseni_mobil.png)
-![řešení pro desktop](https://github.com/pslib-cz/MP2023-24_Pacak-Tomas_Materialy-pro-vyuku-responzivniho-webdesignu/tree/main/CVI%C4%8CEN%C3%8D/responzivni_menu/reseni_desktop.png)
+![řešení pro desktop](./reseni_desktop.png)
