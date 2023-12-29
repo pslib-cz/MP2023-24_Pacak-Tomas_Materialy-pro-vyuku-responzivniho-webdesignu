@@ -3,4 +3,5 @@ Stáhněte si podkladový kód a vytvořte funkční responzivní menu využíva
 (v rámci cvičení nezáleží na přesném paddingu prvků, stačí ho zvolit tak aby vizuálně odpovídal řešení)
 
 ![řešení pro mobilní zařízení](./reseni_mobil.png)
+
 ![řešení pro desktop](./reseni_desktop.png)

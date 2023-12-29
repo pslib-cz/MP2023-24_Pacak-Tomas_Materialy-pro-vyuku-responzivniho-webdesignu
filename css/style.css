@@ -18,7 +18,6 @@ html {scroll-behavior: smooth;}
 }
 
 main {
-    /*background-image: url(../img/bg_s.webp); background-repeat: no-repeat; background-size: cover; background-position: center;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -31,7 +30,6 @@ main {
     display: flex;
     align-items: flex-end;
     gap: 1rem;
-    
     position: absolute;
     top: -2rem;
     right: 1rem;
@@ -65,19 +63,22 @@ main {
     width: 14rem;
 }
 .iconCard__icon {width: 4.5rem;}
-.iconCard__text {display: flex;flex-direction: column; gap: 0.1em; justify-content: center;}
-.iconCard__title {font-weight: 600; font-size: 1.2rem;}
+.iconCard__text {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.1em;
+    justify-content: center;
+}
 .iconCard__text p {margin: 0;}
-.iconCard__line {height: 5rem; width: 2px; background-color: var(--textAlt);}
+.iconCard__line {
+    height: 5rem; 
+    width: 2px; 
+    background-color: var(--textAlt);
+}
     
-
-
-
-
-
+/*karty*/
 .card {background-color: var(--wh); box-shadow: -4px 4px 8px 0px rgba(0, 0, 0, 0.40); height: 100%;}
-.card__text {padding-bottom: 0.5rem; padding: 0 0.5rem 0.5rem 0.5rem;}
-
+.card__text {padding: 0 0.5rem 0.5rem 0.5rem;}
 
 /*story Card*/
 .story__img {
@@ -93,7 +94,6 @@ main {
     padding: 1.5rem;
 }
 .story__desc {color: var(--textAlt);}
-
 
 /*btn*/
 .button {
@@ -114,9 +114,7 @@ main {
     border: solid var(--title) 3px;
     transition: 0.5s;
 }
-.button--2:hover {
-    color: var(--wh);
-}
+.button--2:hover {color: var(--wh);}
 .button--center {position: relative; transform: translate(-50%, 0%); left: 50%; margin-top: 1rem;}
 
 /*galerie*/
@@ -139,7 +137,6 @@ img {width: 100%; display: block;}
     margin-bottom: 25px;
     min-width: 20rem;
 }
-
 .kontakt__text {
     width: 100%;
     padding: 12px 20px;
