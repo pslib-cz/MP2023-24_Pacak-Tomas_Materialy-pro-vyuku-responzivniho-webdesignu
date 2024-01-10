@@ -131,52 +131,6 @@ main {
 }
 img {width: 100%; display: block;}
 
-/*formular*/
-.kontakt__input {
-    position: relative;
-    margin-bottom: 25px;
-    min-width: 20rem;
-}
-.kontakt__text {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid var(--text);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.input__nadpis {
-    position: absolute;
-    top: -0.25rem;
-    pointer-events: none;
-    left: 20px;
-    padding: 0.25em;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-    background-color: white;
-}
-.kontakt__text:focus ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: var(--btn);
-}
-.kontakt__info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 4rem;
-}
-.kontakt__info::after {
-    content: 'Odesláním souhlasíte se spracováním dat.';
-    position: absolute;
-    bottom: -2rem;
-    font-size: 14px;
-}
-.iconCard--kontakt {color: var(--btn);}
-
 /*footer*/
 footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 .footer__icons {
@@ -187,6 +141,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 }
 .footer__socky {
     display: flex;
+    align-items: flex-end;
     gap: 0.6rem;
     justify-content: end;
 }
@@ -197,6 +152,11 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     border-top: 1px solid var(--textAlt);
     font-size: 0.8rem;
 }
+.footer__icon:hover {
+    margin-bottom: 0.25rem;
+    transition: 0.5s;
+}
+.footer__icon {transition: 0.5s;}
 .paticka__wrapper {
     display: flex;
     gap: 10px;
@@ -218,15 +178,15 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 .hamburger {
     display: block;
 }
-.hamburger-nav ul {
+.hamburger-nav menu {
     margin: 0;
     padding: 0;
 }
-.menuDown__item {
+.menu__item {
     display: block;
     margin: 0;
 }
-.menuDown__item--button {
+.menu__item--button {
     padding-left: 0;
 }
 .navbar__logo {
@@ -235,6 +195,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     top: 50%;
     z-index: 5;
     margin-left: 1rem;
+    width: 12rem;
 }
 .hamburger {
     width: 60px;
@@ -261,22 +222,20 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     transition: 0.5s;
 }
 
-.navbar__logo img {width: 15rem;}
-
 @media screen and (max-width: 800px) { 
     .hamburger-row {
         position: relative;
         z-index: 2;
         background-color: var(--text);
     }
-    .menuDown__item a {
+    .menu__item a {
         display: block;
         padding: 1em 1.5em;
         color: var(--wh);   
         text-decoration: none;
         font-size: 18px;
         font-weight: 500;
-        border-top: solid 2px var(--textAlt);
+        border-top: solid 3px var(--textAlt);
     }
     .hamburger-nav.active {
         transform: scaleY(1);
@@ -322,13 +281,13 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
         padding: 2em;
         background-color: var(--text);
     }
-    .hamburger-nav > ul {
+    .hamburger-nav > menu {
         display: flex;
         justify-content: end;
         align-items: center;
         gap: 1em;
     }
-    .menuDown__item a {
+    .menu__item a {
         display: block;
         color: var(--wh);
         transition: .2s;
@@ -336,11 +295,11 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
         font-weight: 800;
         font-size: 20px;
     }
-    .menuDown__item {
+    .menu__item {
        padding: 0.5em;
        height: fit-content;
     }
-    .menuDown__item a:hover {
+    .menu__item a:hover {
         transform: scale(1.05);
         transition: .2s;
         color: var(--btn);

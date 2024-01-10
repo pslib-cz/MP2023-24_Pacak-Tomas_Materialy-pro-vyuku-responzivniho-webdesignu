@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <div class="menu__menuDown">
+        <div class="menu">
             <div class="navbar">
                 <a href="./index.html" class="navbar__logo"><img src="./img/logo_PizzaKing.svg" alt="logo PizzaKing"></a>
                 
@@ -33,12 +33,12 @@
                     </a>
                 </div>
                 <nav class="hamburger-nav hamburger-zone">
-                    <ul>
-                        <li class="menuDown__item"><a href="#rozdily">V čem se lišíme?</a></li>
-                        <li class="menuDown__item"><a href="#pribeh">Náš příběh</a></li>
-                        <li class="menuDown__item"><a href="#vyroba">Výroba</a></li>
-                        <li class="menuDown__item"><a href="#galerie">Galerie</a></li>
-                    </ul>
+                    <menu>
+                        <li class="menu__item"><a href="#rozdily">V čem se lišíme?</a></li>
+                        <li class="menu__item"><a href="#pribeh">Náš příběh</a></li>
+                        <li class="menu__item"><a href="#vyroba">Výroba</a></li>
+                        <li class="menu__item"><a href="#galerie">Galerie</a></li>
+                    </menu>
                 </nav>
             </div>
         </div>
@@ -47,7 +47,7 @@
         <div class="uvod">
             <h1>Pizza<span class="title--modify">King Cutter</span></h1>
             <p class="motto">Tradiční kvalita, moderní elegance</p>
-            <a class="button button--center" href="#">Kouopit</a>
+            <a class="button button--center" href="#">Koupit</a>
         </div>
         
         <div class="mainWrapper">
@@ -175,45 +175,7 @@
             <a class="button button--2" href="mailto:PizzaKing@gmail.com">Napište nám</a>
         </div>
     </section>
-    <section>
-        <h2>Kontaktní formulář</h2>
-        <div>
-            <form>
-                <div class="kontakt__wrapper">
-                    <div class="kontakt__input">
-                    <input class="kontakt__text" type="text" id="name" name="name" placeholder="Petr Čech" required>
-                    <label class="input__nadpis" for="name">Jméno a přijmení</label>
-                    </div>
-                
-                    <div class="kontakt__input">
-                    <input class="kontakt__text" type="text" id="phone" name="phone" placeholder="+420 123 456 789" required>
-                    <label class="input__nadpis" for="phone">Telefonní číslo</label>
-                    </div>
-                
-                    <div class="kontakt__input">
-                    <input class="kontakt__text" type="text" id="email" name="email" placeholder="petrC@gmail.com" required>
-                    <label class="input__nadpis" for="email">Email</label>
-                    </div>
-                </div>
-              <div class="kontakt__input">
-                <textarea class="kontakt__text kontakt__input--zprava" name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
-                <label class="input__nadpis input__nadpis--zprava" for="zprava">Zpráva</label>
-              </div>
-            </form>
-            <div class="kontakt__info">
-                <div class="iconCard iconCard--kontakt">
-                    <img class="iconCard__icon" src="./img/icon_price_y.svg" alt="ikona pro cenu">
-                    <div class="iconCard__line"></div>
-                    <div class="iconCard__text">
-                        <p class="iconCard__title">Cena</p>
-                        <p class="iconCard__desc">2 500 Kč</p>
-                    </div>
-                </div>
-                <a class="button" href="#">Odeslat</a>
-            </div>
-        </div>
-        
-    </section>
+   
     <footer>
         <div class="footerWrapper">
             <div>
@@ -224,9 +186,9 @@
             <div class="footer__icons">
                 <img class="footer__logo" src="./img/logo_PizzaKing.svg" alt="logo PizzaKing">
                 <div class="footer__socky">
-                    <a href="#"><img src="./img/icon_instagram.svg" alt="logo Instagramu"></a>
-                    <a href="#"><img src="./img/icon_facebook.svg" alt="logo Facebooku"></a>
-                    <a href="#"><img src="./img/icon_linkedin.svg" alt="logo LinkedInu"></a>
+                    <a class="footer__icon" href="#"><img src="./img/icon_instagram.svg" alt="logo Instagramu"></a>
+                    <a class="footer__icon" href="#"><img src="./img/icon_facebook.svg" alt="logo Facebooku"></a>
+                    <a class="footer__icon" href="#"><img src="./img/icon_linkedin.svg" alt="logo LinkedInu"></a>
                 </div>
             </div>
             
