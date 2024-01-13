@@ -1,0 +1,61 @@
+
+/* kód pište do style.css */
+
+.uvod {min-height: 15rem; flex-grow: 1; padding-top: 5rem;}
+section{margin: 8rem 1rem 0 1rem;}
+h1 {margin-top: 5rem;}
+
+.cards {
+    display: grid;
+    gap: 2rem;
+}
+
+.card__container {container-type: inline-size;}
+
+@media (min-width: 700px) {
+    .uvod {background-image: url(../img/bg.webp); min-height: 22rem; max-height: 50rem; height: minmax(20rem, 50rem);}
+    
+    h1 {font-size: 5rem;}
+
+    section{margin: 8rem 3rem 0 3rem;}
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cards { grid-template-columns: 1fr;} 
+}
+
+@media (min-width: 1200px) {
+
+    main{height: calc(100vh - 103px);}
+    .uvod {padding-top: 15rem;}
+
+    .cards {grid-template-columns: 1fr 1fr;}
+    
+    .story {
+        display: flex;
+        align-items: center;
+    }
+    .story__wrapper {
+        flex-grow: 2;
+        flex-basis: 500px;
+    }
+    .story__img {
+        position: unset;
+        width: 100%;
+        transform: none;
+    }
+    .story__text {
+        padding-left: 2rem;
+        flex-grow: 3;
+        flex-basis: 400px;
+    }    
+}
+
+@container (min-width: 650px) {
+    .card {display: flex; gap: 1.5rem; align-items: center;}
+    .card__img {max-width: 380px; flex-grow: 1; height: 100%;}
+    .card__text {flex-grow: 2;}
+}

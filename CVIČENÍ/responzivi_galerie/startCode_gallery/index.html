@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaKing Cutter</title>
+    <meta name="description" content="PizzaKing Cutter je víc než jen kráječ na pizzu, je to zážitek. Originální designu, ergonomická rukojeť ze dřeva, ruční práce a kvalitní materiály. Vyberte si svůj styl s možností vlastního výběru druhu dřeva a vygravírovaného textu.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-16x16.png">
+    <link rel="preload" href="./img/bg_s.webp" as="image">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="./css/hamburger.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="navbar">
+                <a href="./index.html" class="navbar__logo"><img src="./img/logo_PizzaKing.svg" alt="logo PizzaKing"></a>
+                
+                <div class="hamburger-row">
+                    <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <nav class="hamburger-nav hamburger-zone">
+                    <menu>
+                        <li class="menu__item"><a href="#rozdily">V čem se lišíme?</a></li>
+                        <li class="menu__item"><a href="#pribeh">Náš příběh</a></li>
+                        <li class="menu__item"><a href="#vyroba">Výroba</a></li>
+                        <li class="menu__item"><a href="#galerie">Galerie</a></li>
+                    </menu>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="uvod">
+            <h1>Pizza<span class="title--modify">King Cutter</span></h1>
+            <p class="motto">Tradiční kvalita, moderní elegance</p>
+            <a class="button button--center" href="#">Koupit</a>
+        </div>
+        
+        <div class="mainWrapper">
+            <div class="socky">
+                <a class="socka" href="#"><img class="socka__icon" src="./img/icon_instagram.svg" alt="Instagram"></a>
+                <a class="socka" href="#"><img class="socka__icon" src="./img/icon_facebook.svg" alt="Facebook"></a>
+                <a class="socka" href="#"><img class="socka__icon" src="./img/icon_linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="icons">
+                <div class="iconCard">
+                    <img class="iconCard__icon" src="./img/icon_dimension.svg" alt="ikona pro rozměry">
+                    <div class="iconCard__line"></div>
+                    <div class="iconCard__text">
+                        <p class="iconCard__title">Rozměry</p>
+                        <p class="iconCard__desc">220x25x30cm</p>
+                    </div>
+                </div>
+                <div class="iconCard">
+                    <img class="iconCard__icon" src="./img/icon_price.svg" alt="ikona pro cenu">
+                    <div class="iconCard__line"></div>
+                    <div class="iconCard__text">
+                        <p class="iconCard__title">Cena</p>
+                        <p class="iconCard__desc">2 500 Kč</p>
+                    </div>
+                </div>
+                <div class="iconCard">
+                    <img class="iconCard__icon" src="./img/icon_weight.svg" alt="ikona pro hmotnost">
+                    <div class="iconCard__line"></div>
+                    <div class="iconCard__text">
+                        <p class="iconCard__title">Rozměry</p>
+                        <p class="iconCard__desc">220x25x30cm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="pageWrapper">
+        <section id="rozdily">
+            <h2>V čem se lišíme?</h2>
+            <div class="cards">
+                <div class="card__container">
+                    <div class="card">
+                        <img class="card__img" src="./img/pizza.webp" alt="Dokonale nakrájená pizza">
+                        <div class="card__text">
+                            <h3>Ostrý řez v duchu tradice</h3>
+                            <p>S ostrým řezacím diskem z nerezové oceli a ergonomicky tvarovanou rukojetí z palisandrového dřeva, bude krájení jakékoli pizzy snadné a pohodlné. Neotřelý design a tradiční kvalita navíc zaručí, že si užijete dechberoucí zážitek.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card">
+                        <img class="card__img" src="./img/pizza_cutter.webp" alt="kráječ na pizzu s dřevěnou rukojetí">
+                        <div class="card__text">
+                            <h3>Praktický nástroj, nádherná okrasa</h3>
+                            <p>Náš kráječ na pizzu je symbolem dokonalosti a elegance v kuchyni. Každý detail tohoto produktu vystihuje dokonalou harmonii funkčnosti a estetiky. Palisandrová rukojeť se záštitou je korunou celého designu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pribeh">
+            <div class="story">
+                <div class="story__wrapper">
+                    <img class="story__img" sizes="(max-widht: 630px) 70vw, (min-widht: 630) 50vw" src="./img/originalni_krajec_na_pizzuS.webp" alt="originální kráječ na pizzu" srcset="./img/originalni_krajec_na_pizzuS.webp 600w, ./img/originalni_krajec_na_pizzu.webp 1000w">
+                </div>
+                <div class="story__text">
+                    <h2><span class="title--modify">Náš příběh</span></h2>
+                    <p class="story__desc">Odkud vznikl nápad na tenhle kráječ? Věříme, že kvalitní nástroje jsou srdcem každé kuchyně. Měli jsme plné zuby klasických kráječů, které postrádají něžný dotek designu. A tak vznikl PizzaKing Cutter – kráječ na pizzu, který spojuje klasický design loveckého nože s nezbytností snadného nakrájení i nejtlustší pizzy. Vstupte do světa PizzaKing, kde nejde jen o kráječ, ale o výraz lásky k poctivé pizze a řemeslu.</p>
+                    <a class="button" href="#">Koupit</a>
+                    <a class="button button--2" href="mailto:PizzaKing@gmail.com">Napište nám</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="vyroba">
+            <h2>Výroba</h2>
+            <div class="cards">
+                <div class="card__container">
+                    <div class="card">
+                        <img class="card__img" src="./img/kovar.webp" alt="Řemeslná výroba kráječe na pizzu">
+                        <div class="card__text">
+                            <h3>Luxus kvality</h3>
+                            <p>Náš kráječ na pizzu je mistrovským dílem inženýrství a designu. Tělo kráječe je vyrobeno z nerezové oceli o šířce 3mm, což zajišťuje jeho odolnost a dlouholetou životnost. Každý kus je vytvořen s pečlivostí a podílem ruční práce.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card">
+                        <img class="card__img" src="./img/drevo.webp" alt="Různé druhy dřeva na kráječ na pizzu">
+                        <div class="card__text">
+                            <h3>Svět možností</h3>
+                            <p>Máte možnost vybrat si z široké škály druhů dřeva, každý druh má svůj vlastní charakter a jedinečnost. Každá rukojeť je vyráběna s tradičním řemeslným přístupem, což zajišťuje ruční zpracování a kvalitu každé jednotlivé rukojeti. Proto si můžete určit druh dřeva na rukojeť podle sebe, pokud vám palisandr nevyhovuje.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <section id="galerie">
+        <h2><span class="title--modify">Galerie</span></h2>
+        <div class="gallery">
+            <div class="gItem">
+                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g1.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
+            </div>
+            <div class="gItem gItem gItem--2">
+                <a class="gItem__link" href="#"><img class="gItem__img" sizes="" src="./img/g2.webp" srcset="./img/g2.webp , ./img/g2_b.webp " alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+            </div>
+            <div class="gItem gItem--3">        
+                <a class="gItem__link" href="#"><img class="gItem__img" sizes="" src="./img/g3.webp" srcset="./img/g3.webp , ./img/g3_b.webp " alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
+            </div>
+            <div class="gItem">
+                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g4.webp" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+            </div>
+            <div class="gItem">
+                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g5.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
+            </div>
+            <div class="gItem gItem--6">
+                <a class="gItem__link" href="#"><img class="gItem__img" sizes="" src="./img/g6.webp" srcset="./img/g6.webp , ./img/g6_b.webp " alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+            </div>
+        </div>
+        <div class="gallery__buttons">
+            <a class="button" href="#">Koupit</a>
+            <a class="button button--2" href="mailto:PizzaKing@gmail.com">Napište nám</a>
+        </div>
+    </section>
+   
+    <footer>
+        <div class="footerWrapper">
+            <div>
+                <div></div>
+            </div>
+
+            
+            <div class="footer__icons">
+                <img class="footer__logo" src="./img/logo_PizzaKing.svg" alt="logo PizzaKing">
+                <div class="footer__socky">
+                    <a class="footer__icon" href="#"><img src="./img/icon_instagram.svg" alt="logo Instagramu"></a>
+                    <a class="footer__icon" href="#"><img src="./img/icon_facebook.svg" alt="logo Facebooku"></a>
+                    <a class="footer__icon" href="#"><img src="./img/icon_linkedin.svg" alt="logo LinkedInu"></a>
+                </div>
+            </div>
+            
+            <div class="footer__paticka">
+                <div class="paticka__wrapper">
+                    <p>©Copyright 2023</p>
+                    <p>Cookies</p>
+                </div>
+                <p>Created by: Tomáš Pacák</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
