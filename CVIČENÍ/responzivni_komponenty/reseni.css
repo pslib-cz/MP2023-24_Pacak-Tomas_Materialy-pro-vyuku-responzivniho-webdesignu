@@ -1,0 +1,55 @@
+/* v tomto řešení je zobrazen pouze kód, který je potřeba v cvičení dopsat*/
+
+/* icon cards */
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #4C2121;
+    padding: 1rem 0 1rem 0;
+}
+.iconCard__text {
+    color: white;
+}
+.iconCard__line {
+    height: 5rem;
+    width: 2px;
+    background-color: aliceblue;
+}
+
+/*karty*/
+.card {
+    box-shadow: -4px 4px 8px 0px rgba(0, 0, 0, 0.40);
+}
+.card__text { padding: 0 0.5rem 0.5rem 0.5rem;}
+
+@container (min-width: 650px) {
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .card__img {
+        max-width: 350px;
+        flex-grow: 1;
+        height: 100%;
+    }
+    .card__text {flex-grow: 2;}
+}
+
+
+/*HTML řešení
+
+<div class="story">
+                <div class="story__wrapper">
+                    <img class="story__img" sizes="(max-widht: 630px) 70vw, (min-widht: 630) 50vw" src="./img/originalni_krajec_na_pizzuS.webp" alt="originální kráječ na pizzu" srcset="./img/originalni_krajec_na_pizzuS.webp 600w, ./img/originalni_krajec_na_pizzu.webp 1000w">
+                </div>
+                <div class="story__text">
+                    <h2><span class="title--modify">Náš příběh</span></h2>
+                    <p class="story__desc">Odkud vznikl nápad na tenhle kráječ? Věříme, že kvalitní nástroje jsou srdcem každé kuchyně. Měli jsme plné zuby klasických kráječů, které postrádají něžný dotek designu. A tak vznikl PizzaKing Cutter – kráječ na pizzu, který spojuje klasický design loveckého nože s nezbytností snadného nakrájení i nejtlustší pizzy. Vstupte do světa PizzaKing, kde nejde jen o kráječ, ale o výraz lásky k poctivé pizze a řemeslu.</p>
+                    <a class="button" href="#">Koupit</a>
+                    <a class="button button--2" href="mailto:PizzaKing@gmail.com">Napište nám</a>
+                </div>
+</div>
+*/

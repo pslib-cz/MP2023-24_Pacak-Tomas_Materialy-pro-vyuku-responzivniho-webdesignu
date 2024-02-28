@@ -11,7 +11,6 @@ h1 {margin-top: 5rem;}
 .gallery {
     display: flex;
     gap: 1rem;
-    grid-template-rows: 1;
     overflow-x: scroll;
     white-space: nowrap;
     margin: 0 1rem 1rem 1rem;
@@ -21,7 +20,7 @@ h1 {margin-top: 5rem;}
 .card__container {container-type: inline-size;}
 
 @media (min-width: 700px) {
-    .uvod {background-image: url(../img/bg.webp); min-height: 22rem; max-height: 50rem; height: minmax(20rem, 50rem);}
+    .uvod {background-image: url(../img/bg.webp); min-height: 22rem;}
     
     h1 {font-size: 5rem;}
 

@@ -60,6 +60,7 @@ main {
 }
 .iconCard {
     display: flex;
+    align-items: center;
     gap: 1rem;
     width: 14rem;
 }
@@ -169,12 +170,10 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 /*hamburger menu*/
 .navbar {
     position: relative;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .hamburger-row {
-    padding: 1rem 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: flex-end;
 }

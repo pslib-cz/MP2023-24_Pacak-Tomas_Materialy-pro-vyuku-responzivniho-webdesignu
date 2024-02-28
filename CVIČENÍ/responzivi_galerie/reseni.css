@@ -1,0 +1,53 @@
+/* v tomto řešení je zobrazen pouze kód, který je potřeba v cvičení dopsat*/
+
+/*mobile*/
+#galerie {
+    background-color: #4C2121;
+    padding: 2rem;
+    margin: 5rem 0 0 0;
+}
+.gallery {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    overflow-x: scroll;
+}
+.gItem {min-width: 300px;}
+
+/*tablet*/
+@media (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow-x: unset;
+    }
+    .gItem--3 {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+    }
+    .gItem--6 {
+        grid-column: 1 /span 2;
+        grid-row: 5 / span 2;
+    }
+}
+@media (min-width: 1200px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 5rem 1rem 5rem;
+    }
+    .gItem--2 {grid-column: 1 / span 2; grid-row: 2 / span 3;}
+    .gItem--3 {grid-column: unset; grid-row: unset;}
+    .gItem--6 {grid-column: unset; grid-row: unset;}
+}
+
+/*HTML řešení
+
+gItem--2
+sizes="(max-widht: 630px) 50vw, (min-widht: 630) 75vw" src="./img/g2.webp" srcset="./img/g2.webp 500w, ./img/g2_b.webp 1100w"
+
+gItem--3
+sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g3.webp" srcset="./img/g3.webp 500w, ./img/g3_b.webp 1100w"
+
+gItem--6
+sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g6.webp" srcset="./img/g6.webp 500w, ./img/g6_b.webp 1100w"
+*/

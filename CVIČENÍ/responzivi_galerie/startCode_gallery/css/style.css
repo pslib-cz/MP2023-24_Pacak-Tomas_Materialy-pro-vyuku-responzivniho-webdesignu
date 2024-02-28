@@ -172,8 +172,6 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 /*hamburger menu*/
 .navbar {
     position: relative;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .hamburger-row {

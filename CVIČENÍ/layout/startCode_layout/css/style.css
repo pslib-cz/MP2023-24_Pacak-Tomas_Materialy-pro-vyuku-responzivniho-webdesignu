@@ -310,7 +310,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     
     .pageWrapper {
         margin: 0;
-        max-width: 1200px;
+        max-width: 1500px;
         min-width: 700px;
         margin-right: auto;
         margin-left: auto;

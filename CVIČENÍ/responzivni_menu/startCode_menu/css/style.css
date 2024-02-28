@@ -164,7 +164,6 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     gap: 10px;
 }
 
-
 /*hamburger menu*/
 .navbar {
     
@@ -182,9 +181,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 .menu__item {
    
 }
-.menu__item--button {
-    
-}
+
 .navbar__logo {
     
 }
@@ -264,9 +261,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     .menu__item a {
        
     }
-    .menu__item {
-      
-    }
+    
     .menu__item a:hover {
         
     }

@@ -1,0 +1,86 @@
+/* v tomto řešení je zobrazen pouze kód, který je potřeba v cvičení dopsat*/
+
+.navbar {
+    position: relative;
+}
+
+.hamburger-row {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end
+}
+
+.hamburger-nav menu {
+    margin: 0;
+    padding: 0;
+}
+.menu__item {
+    display: block;
+    margin: 0;
+}
+
+.navbar__logo {
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    z-index: 5;
+    margin-left: 1rem;
+    width: 12rem;
+}
+
+@media screen and (max-width: 800px) { 
+    .hamburger-row {
+        position: relative;
+        z-index: 2;
+        background-color: rgb(58, 58, 58);
+    }
+    .menu__item a {
+        display: block;
+        padding: 1em 1.5em;
+        color: white;   
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-top: solid 3px rgb(211, 211, 211);
+    }
+    
+    .hamburger-nav.active > .navbar__logo {
+        position: absolute;
+        top: -3em;
+    }
+    .hamburger-nav {
+        transition: 0.5s;
+        position: absolute;
+        right: 0;
+        background-color:rgb(58, 58, 58);
+        width: 13em;
+        z-index: 1;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 801px) {
+    .hamburger-row {
+        display: none;
+    }
+    .hamburger-nav {
+        transform: none;
+        padding: 2em;
+        background-color: rgb(58, 58, 58);
+    }
+    
+    .menu__item a {
+        display: block;
+        color: white;   
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        transition: .1s;
+    }
+    
+    .menu__item a:hover {
+        transform: scale(1.05);
+        transition: .1s;
+        color: rgb(241, 185, 0);
+    }
+    
+}
